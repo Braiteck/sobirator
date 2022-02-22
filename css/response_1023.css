@@ -1,0 +1,1314 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs button
+    {
+        font-size: 12px;
+        line-height: 130%;
+
+        padding: 11px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 23px 88px 23px 23px;
+    }
+
+    .accordion_item .data
+    {
+        margin-top: -4px;
+        padding: 0 23px 23px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu:not(.tablet_menu)
+    {
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        display: block;
+
+        width: 200px;
+        padding: 20px;
+
+        transition: transform .3s linear;
+        transform: translateX(100%);
+        text-align: right;
+
+        background: #042749;
+    }
+
+    header .menu:not(.tablet_menu).show
+    {
+        transform: translateX(0);
+    }
+
+    header .menu:not(.tablet_menu) .item + .item
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+    header .menu:not(.tablet_menu) .item > a:after
+    {
+        display: none;
+    }
+
+
+    header .menu.tablet_menu
+    {
+        display: flex;
+    }
+
+    header .menu.tablet_menu .item + .item
+    {
+        margin-left: 36px;
+    }
+
+
+    header .search_btn
+    {
+        display: none;
+    }
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .block_head .title.border
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .block_head .all_link
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 30px;
+    }
+
+
+    .text_block table th
+    {
+        font-size: 14px;
+        line-height: 130%;
+
+        padding: 15px;
+    }
+
+    .text_block table td
+    {
+        font-size: 12px;
+        line-height: 130%;
+
+        padding: 15px;
+    }
+
+
+    .text_block .plus_minus
+    {
+        padding: 23px;
+    }
+
+
+
+    .text_block .info_block
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    .text_block .info_block .image
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 65%;
+    }
+
+
+    .text_block .info_block .data
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+
+    .text_block .info_block .gallery
+    {
+        position: relative;
+        bottom: 0;
+    }
+
+    .text_block .info_block .gallery .image
+    {
+        height: 100px;
+        padding: 0;
+    }
+
+
+    .text_block .message
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .text_block .columns
+    {
+        column-gap: 30px;
+    }
+
+
+    .text_block blockquote
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        padding: 23px;
+
+        background: none;
+    }
+
+
+    .text_block .fancy_gallery .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .text_block .fancy_gallery .row > *
+    {
+        width: calc(14.285% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+    .text_block .fancy_gallery .row > *.big_w
+    {
+        width: calc(100% - 12px);
+    }
+
+
+    .text_block .fancy_gallery .image
+    {
+        height: 68px;
+    }
+
+
+
+    /*----------------------
+        Info block image
+    ----------------------*/
+    .info_blocks_image .item
+    {
+        padding: 19px 0 19px 19px;
+
+        border: 1px solid #0956a3;
+        border-right: none;
+    }
+
+    .info_blocks_image .item:nth-child(2n)
+    {
+        padding: 19px 19px 19px 0;
+
+        border: 1px solid #0956a3;
+        border-left: none;
+    }
+
+
+    .info_blocks_image .image
+    {
+        width: 100%;
+        min-height: 0;
+        margin-bottom: 20px;
+        padding-bottom: 44.91%;
+
+        order: 1;
+    }
+
+
+    .info_blocks_image .data,
+    .info_blocks_image .item:nth-child(2n+1) .data
+    {
+        width: 100%;
+        min-height: 0;
+        padding: 0;
+
+        border: none;
+
+        order: 2;
+    }
+
+
+
+    /*-----------------------
+        Info blocks color
+    -----------------------*/
+    .info_blocks_color .row
+    {
+        padding: 0;
+    }
+
+    .info_blocks_color .row + .row
+    {
+        margin-top: 60px;
+    }
+
+    .info_blocks_color .row:before
+    {
+        display: none;
+    }
+
+    .info_blocks_color .row > *
+    {
+        width: calc(100% + 24px);
+    }
+
+
+    .info_blocks_color .col_left,
+    .info_blocks_color .row:nth-child(2n) .col_left
+    {
+        position: relative;
+
+        width: calc(100% + 24px);
+        margin: 60px -24px 60px 0;
+        padding: 19px 23px;
+
+        border: 1px solid;
+        border-right: none;
+
+        order: 1;
+    }
+
+    .info_blocks_color .col_left:before
+    {
+        position: absolute;
+        z-index: -1;
+        top: -61px;
+        right: 0;
+
+        display: block;
+
+        width: 100vw;
+        height: calc(100% + 122px);
+
+        content: '';
+
+        background: #0956a3;
+    }
+
+
+    .info_blocks_color .col_right,
+    .info_blocks_color .row:nth-child(2n) .col_right
+    {
+        margin: 60px 0 0 -24px;
+        padding: 19px 23px;
+
+        border: 1px solid #0956a3;
+        border-left: none;
+
+        order: 2;
+    }
+
+
+
+    /*----------------------------
+        Business greening form
+    ----------------------------*/
+    .business_greening_form .form
+    {
+        position: relative;
+
+        width: 100%;
+        padding-right: 38px;
+        padding-bottom: 44px;
+
+        border-right: 1px solid #0956a3;
+
+        order: 2;
+    }
+
+    .business_greening_form .form:after
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        display: block;
+
+        width: calc(100% - 488px);
+        height: 1px;
+
+        content: '';
+
+        background: #0956a3;
+    }
+
+    .business_greening_form .form .agree
+    {
+        bottom: -10px;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .business_greening_form .data
+    {
+        width: 100%;
+        margin: 0;
+        padding: 39px 39px 39px 0;
+    }
+
+    .business_greening_form .data:after
+    {
+        display: none;
+    }
+
+
+
+    /*----------
+        Blog
+    ----------*/
+    .blog .banner
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 24px;
+    }
+
+
+    .blog .banner .info
+    {
+        height: 302px;
+        padding: 24px;
+
+        border: 1px solid #fff;
+    }
+
+    .blog .banner .title
+    {
+        font-size: 35px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .blog .grid > *,
+    .blog .grid > *.min_w
+    {
+        width: calc(50% - 20px);
+    }
+
+    .blog .grid > *.big_w,
+    .blog .grid > *.middle_w
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .blog .article .thumb,
+    .blog .article.middle_h .thumb,
+    .blog .article.big_h .thumb,
+    .blog .article.biggest_h .thumb
+    {
+        height: 420px;
+    }
+
+
+
+    /*---------------------
+        Subscribe block
+    ---------------------*/
+    .subscribe_block
+    {
+        padding: 94px 0 60px;
+    }
+
+
+    .subscribe_block .block_head
+    {
+        top: -40px;
+    }
+
+    .subscribe_block .block_head .title
+    {
+        font-size: var(--font_size_title);
+        line-height: calc(100% + 16px);
+    }
+
+    .subscribe_block .block_head .title:after
+    {
+        top: 40px;
+    }
+
+
+    .subscribe_block .image
+    {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 92px;
+        margin-bottom: 30px;
+        padding-bottom: 32.04%;
+    }
+
+
+    .subscribe_block .form
+    {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+
+        order: 2;
+    }
+
+    .subscribe_block .form .input
+    {
+        font-size: 17px;
+
+        padding: 0 15px;
+    }
+
+    .subscribe_block .form .submit
+    {
+        padding: 10px 0 0;
+    }
+
+    .subscribe_block .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Presentation
+    ------------------*/
+    .presentation .data
+    {
+        padding: 35px 39px;
+    }
+
+
+    .presentation .info
+    {
+        width: 100%;
+    }
+
+
+    .presentation .img
+    {
+        position: relative;
+
+        max-width: 100%;
+        height: auto;
+        margin: 32px auto 0;
+    }
+
+
+
+    /*---------------
+        Our stats
+    ---------------*/
+    .our_stats .row
+    {
+        margin-bottom: -80px;
+        margin-left: -80px;
+        padding: 0 24px;
+    }
+
+    .our_stats .row > *
+    {
+        width: calc(50% - 80px);
+        margin-bottom: 80px;
+        margin-left: 80px;
+    }
+
+
+    .our_stats .item
+    {
+        padding: 39px 19px 19px;
+    }
+
+
+
+    /*---------------
+        How where
+    ---------------*/
+    .how_where .row
+    {
+        padding-left: 0;
+    }
+
+
+    .how_where .col
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        How donate
+    ----------------*/
+    .how_donate .data
+    {
+        width: 100%;
+        max-width: 100%;
+
+        order: 2;
+    }
+
+
+    .how_donate .image
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .how_donate .image div
+    {
+        padding-bottom: 62.21%;
+    }
+
+    .how_donate .image .video_link
+    {
+        display: flex;
+    }
+
+
+    .how_donate .bottom
+    {
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 0;
+
+        justify-content: center;
+    }
+
+    .how_donate .bottom > *
+    {
+        margin: 0;
+    }
+
+
+    .how_donate .donate_link
+    {
+        padding: 15px 39px;
+    }
+
+
+    .how_donate .bottom .video_link
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Anim title
+    ----------------*/
+    .anim_title
+    {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+
+
+    /*-------------------
+        General rules
+    -------------------*/
+    .general_rules .row
+    {
+        padding-left: 0;
+    }
+
+
+    .general_rules .col
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        Don't give up
+    -------------------*/
+    .dont_give_up .title
+    {
+        display: none;
+    }
+
+
+    .dont_give_up .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------------
+        List categories
+    ---------------------*/
+    .list_categories .head
+    {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .list_categories .head .icon
+    {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+    }
+
+    .list_categories .item .title,
+    .list_categories .item li
+    {
+        line-height: 21px;
+    }
+
+
+    .list_categories .accept .item li,
+    .list_categories .not_accept .item li,
+    .list_categories .prepare .item li
+    {
+        background-position: 0 0;
+    }
+
+
+
+    /*-------------------------
+        Eco center contacts
+    -------------------------*/
+    .eco_center_contacts .info
+    {
+        width: 100%;
+    }
+
+
+    .eco_center .reference
+    {
+        padding: 19px;
+    }
+
+
+    .eco_center .image
+    {
+        height: auto;
+        padding-bottom: 49.42%;
+    }
+
+
+
+    /*---------------------
+        Eco center text
+    ---------------------*/
+    .eco_center_text .data
+    {
+        padding: 20px;
+    }
+
+
+
+    /*---------------
+        Join text
+    ---------------*/
+    .join_text .data
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-------------------
+        For recycling
+    -------------------*/
+    .for_recycling .text_block
+    {
+        width: 100%;
+        max-width: 100%;
+
+        order: 2;
+    }
+
+
+    .for_recycling .image
+    {
+        margin: 0 0 30px;
+
+        order: 1;
+    }
+
+
+
+    /*------------------
+        Encyclopedia
+    ------------------*/
+    .encyclopedia .section + .section
+    {
+        margin-top: 50px;
+    }
+
+
+    .encyclopedia .letter,
+    .encyclopedia .category_name
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .encyclopedia .item .thumb
+    {
+        height: 108px;
+    }
+
+    .encyclopedia .item .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 16px;
+    }
+
+
+
+    /*----------------------
+        Become valanteur
+    ----------------------*/
+    .become_valanteur .data
+    {
+        padding: 35px 39px;
+    }
+
+
+    .become_valanteur .info
+    {
+        width: 100%;
+    }
+
+
+    .become_valanteur .img
+    {
+        position: relative;
+
+        max-width: 100%;
+        height: auto;
+        margin: 32px auto 0;
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block .image
+    {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 44.91%;
+    }
+
+
+    .contacts_block .image + .info
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .contacts_block .text_block
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+
+    /*--------------------
+        Gallery slider
+    -------------------*/
+    .gallery_slider .slide.visible .image
+    {
+        outline-offset: -12px;
+    }
+
+
+    .gallery_slider .swiper-button-next,
+    .gallery_slider .swiper-button-prev
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+    .gallery_slider .swiper-button-next .icon,
+    .gallery_slider .swiper-button-prev .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .gallery_slider .thumbs
+    {
+        margin-top: 16px;
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .gallery_slider .thumbs > *
+    {
+        width: 60px;
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+    .gallery_slider .thumbs button
+    {
+        height: 64px;
+    }
+
+
+
+    /*--------------
+        Map wrap
+    --------------*/
+    .map_wrap .explanations > *
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    /*---------------------
+        Selected object
+    ---------------------*/
+    .selected_object .name
+    {
+        font-size: 30px;
+
+        margin-bottom: 24px;
+        padding-left: 48px;
+    }
+
+    .selected_object .name .icon
+    {
+        top: 4px;
+
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .col_right .text_block li + li
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*------------
+        Cities
+    ------------*/
+    .cities
+    {
+        padding: 90px 0;
+    }
+
+
+    .cities .btn
+    {
+        font-size: 17px;
+        line-height: 25px;
+
+        min-height: 0;
+        padding: 15px;
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .row
+    {
+        padding-left: 0;
+    }
+
+    .info_blocks .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    .info_blocks .link
+    {
+        margin-top: 50px;
+    }
+
+
+
+    /*------------
+        Cities
+    ------------*/
+    .cities .row > *
+    {
+        width: calc(33.333% + 1px);
+    }
+
+
+    .cities .btn
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    /*----------------
+        Activities
+    ----------------*/
+    .activities .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .data .row > *
+    {
+        width: calc(50% - 32px);
+    }
+
+
+
+    /*-----------------
+        Stats block
+    -----------------*/
+    .stats_block .row > *
+    {
+        width: calc(50% - 32px);
+    }
+
+
+    .stats_block .item
+    {
+        position: relative;
+    }
+
+    .stats_block .item .val
+    {
+        font-size: 45px;
+        line-height: 53px;
+
+        margin-bottom: 0;
+    }
+
+    .stats_block .item .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .stats_block .item .tooltip
+    {
+        position: static;
+        top: 0;
+
+        margin-bottom: 6px;
+        margin-left: 4px;
+    }
+
+    .stats_block .item:nth-child(3n+1) .tooltip .text,
+    .stats_block .item:nth-child(3n) .tooltip .text,
+    .stats_block .item .tooltip .text,
+    .stats_block .item .tooltip:hover .text
+    {
+        top: 53px;
+        right: auto;
+        left: 0;
+
+        transform: none;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .articles .article .thumb,
+    .articles .article.big .thumb
+    {
+        padding-bottom: 55%;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients
+    {
+        margin-top: 0;
+    }
+
+
+    .clients .vertical_title
+    {
+        display: none;
+    }
+
+
+    .clients .row
+    {
+        padding: 0;
+    }
+
+    .clients .row > *
+    {
+        width: calc(25% - 12px);
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        margin-bottom: 90px;
+    }
+
+
+
+    /*--------------------
+        Article bottom
+    --------------------*/
+    .article_bottom
+    {
+        line-height: 22px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .article_bottom .author_article
+    {
+        width: calc(100% - 240px);
+    }
+
+
+    .article_bottom .author_photo
+    {
+        width: 200px;
+    }
+
+
+    .article_bottom .share
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+    .article_bottom .like_btn
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------
+        Comments
+    --------------*/
+    .comments .list > * + *
+    {
+        margin-top: 30px;
+    }
+
+
+    .comments .comment .avatar + *
+    {
+        width: calc(100% - 99px);
+    }
+
+
+    .comments .comment .author
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .links_wrap
+    {
+        padding: 40px 0;
+    }
+
+
+    footer .links_wrap .row
+    {
+        margin-bottom: -24px;
+        margin-left: 0;
+    }
+
+    footer .links_wrap .row > *
+    {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+
+    footer .links_wrap .title
+    {
+        position: relative;
+
+        margin: 0;
+
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    footer .links_wrap .title .icon
+    {
+        display: block;
+    }
+
+
+    footer .links_wrap .items
+    {
+        display: none;
+
+        padding-top: 20px;
+    }
+
+
+
+    footer .info
+    {
+        padding: 40px 0;
+    }
+
+
+    footer .info .row
+    {
+        margin-left: 0;
+    }
+
+    footer .info .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    footer .contacts .name
+    {
+        max-width: 270px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

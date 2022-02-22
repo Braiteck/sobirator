@@ -1,0 +1,97 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    color: #fff;
+
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: auto;
+
+    transition: opacity .2s linear;
+    transform: none;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+.swiper-button-next .icon
+{
+    transform: rotate(-180deg);
+}
+
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled
+{
+    opacity: .4;
+}
+
+
+
+.swiper-pagination
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    height: 8px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet
+{
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    transition: background .2s linear;
+
+    opacity: 1;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: none;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 5px !important;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet.active
+{
+    background: #fff;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
