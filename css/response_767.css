@@ -1682,6 +1682,60 @@
 
 
 
+    /*-----------------
+        Donate info
+    -----------------*/
+    .donate_info .form .input
+    {
+        height: 52px;
+    }
+
+
+    .donate_info .period label
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 11px;
+    }
+
+    .donate_info .period .desc
+    {
+        line-height: 21px;
+
+        margin-top: 16px;
+    }
+
+
+    .donate_info .sum label
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        padding: 11px;
+    }
+
+
+    .donate_info .data
+    {
+        padding: 23px 23px 23px 0;
+    }
+
+
+    .donate_info .data .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .donate_info .payments
+    {
+        margin-bottom: -12px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

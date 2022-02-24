@@ -1235,6 +1235,38 @@
 
 
 
+    /*-----------------
+        Donate info
+    -----------------*/
+    .donate_info .tabs
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .donate_info .tabs button
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 11px 23px;
+    }
+
+
+    .donate_info .form
+    {
+        width: 100%;
+    }
+
+
+    .donate_info .data
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

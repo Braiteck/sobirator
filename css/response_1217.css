@@ -1383,6 +1383,106 @@
 
 
 
+    /*-----------------
+        Donate info
+    -----------------*/
+    .donate_info .tabs
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    .donate_info .form
+    {
+        width: 360px;
+    }
+
+
+    .donate_info .form .input
+    {
+        padding: 0 19px;
+    }
+
+
+    .donate_info .form .submit
+    {
+        padding-top: 24px;
+    }
+
+
+    .donate_info .period label
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 15px;
+    }
+
+
+    .donate_info .period .desc
+    {
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .donate_info .sum .title
+    {
+        font-size: 26px;
+        line-height: 130%;
+
+        margin-bottom: 16px;
+    }
+
+    .donate_info .sum label
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 15px;
+    }
+
+
+    .donate_info .form .agree label
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        min-height: 22px;
+        padding-left: 32px;
+    }
+
+    .donate_info .form .agree label:before
+    {
+        top: 1px;
+    }
+
+
+    .donate_info .data
+    {
+        width: calc(100% - 392px);
+        padding: 31px 31px 31px 0;
+    }
+
+
+    .donate_info .data .title
+    {
+        font-size: 21px;
+        line-height: 25px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .donate_info .payments
+    {
+        margin-bottom: -24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

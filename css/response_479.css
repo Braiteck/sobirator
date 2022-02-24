@@ -770,6 +770,25 @@
 
 
 
+    /*-----------------
+        Donate info
+    -----------------*/
+    .donate_info .tabs button
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        padding: 11px 19px;
+    }
+
+
+    .donate_info .sum .title
+    {
+        font-size: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

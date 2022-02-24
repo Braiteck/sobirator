@@ -3189,9 +3189,9 @@ header.absolute
 .anim_title
 {
     color: var(--bg);
-    font-size: 124px;
+    font-size: 120px;
     font-weight: 900;
-    line-height: 147px;
+    line-height: 140px;
 
     white-space: nowrap;
     letter-spacing: .05em;
@@ -3209,6 +3209,8 @@ header.absolute
 .anim_title > * + *
 {
     margin-top: -12px;
+
+    text-align: right;
 }
 
 .anim_title div div
@@ -3224,13 +3226,19 @@ header.absolute
 
     display: block;
 
-    animation: horMove 15s infinite linear;
+    /* animation: horMove 15s infinite linear; */
 }
 
-.anim_title.fast span
+.anim_title > * + * span
+{
+    right: 0;
+    left: auto;
+}
+
+/* .anim_title.fast span
 {
     animation: horMove 4s infinite linear;
-}
+} */
 
 
 
@@ -8179,6 +8187,402 @@ header.absolute
 .eco_center_contacts .val
 {
     line-height: 25px;
+}
+
+
+
+/*-----------------
+    Donate info
+-----------------*/
+.donate_info
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.donate_info .circle_text
+{
+    position: absolute;
+    z-index: -1;
+    right: 50%;
+    bottom: -108px;
+
+    display: block;
+
+    width: 217px;
+    height: 217px;
+    margin-right: -678px;
+
+    animation: rotate360 15s infinite linear;
+    pointer-events: none;
+}
+
+
+.donate_info .circle_arrows
+{
+    position: absolute;
+    z-index: -1;
+    top: 257px;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+
+    width: 548px;
+    height: 522px;
+    margin-left: -1189px;
+
+    transform: rotate(0deg);
+    pointer-events: none;
+}
+
+
+.donate_info .tabs
+{
+    margin-bottom: 60px;
+}
+
+.donate_info .tabs button
+{
+    font-weight: 600;
+    line-height: 19px;
+
+    padding: 15px 39px;
+}
+
+.donate_info .tabs button:hover,
+.donate_info .tabs button.active
+{
+    color: #0956a3;
+
+    background: none;
+    box-shadow: inset 0 0 0 2px #0956a3;
+}
+
+
+.donate_info .tab_content
+{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+
+.donate_info .form
+{
+    width: 440px;
+    max-width: 100%;
+
+    --form_border_color: var(--text_color);
+    --form_focus_color: var(--text_color);
+    --form_bg_color: none;
+    --form_placeholder_color: #696969;
+}
+
+.donate_info .form .input
+{
+    padding: 0 24px;
+
+    box-shadow: none;
+}
+
+
+.donate_info .form .agree > * + *
+{
+    margin-top: 12px;
+}
+
+
+.donate_info .form .agree input
+{
+    display: none;
+}
+
+.donate_info .form .agree label
+{
+    font-size: 18px;
+    line-height: 26px;
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 26px;
+    padding-left: 29px;
+
+    cursor: pointer;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.donate_info .form .agree label a
+{
+    color: #0956a3;
+
+    text-decoration: none;
+}
+
+
+.donate_info .form .agree label:before
+{
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    display: block;
+
+    width: 19px;
+    height: 19px;
+
+    content: '';
+    transition: .2s linear;
+
+    border: 1px solid var(--form_border_color);
+}
+
+.donate_info .form .agree label:after
+{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+
+    display: block;
+
+    width: 10px;
+    height: 6px;
+
+    content: '';
+    transition: opacity .2s linear;
+    transform: rotate(-45deg);
+
+    opacity: 0;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.donate_info .form .agree input:checked + label:before
+{
+    border-color: #0956a3;
+    background: #0956a3;
+}
+
+.donate_info .form .agree input:checked + label:after
+{
+    opacity: 1;
+}
+
+
+.donate_info .form .submit
+{
+    padding-top: 36px;
+}
+
+.donate_info .form .submit_btn
+{
+    width: 100%;
+    margin: 0;
+}
+
+
+.donate_info .period
+{
+    display: flex;
+
+    margin-bottom: 25px;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+
+.donate_info .period input
+{
+    display: none;
+}
+
+.donate_info .period label
+{
+    color: #0956a3;
+    font-size: 18px;
+    line-height: 26px;
+
+    position: relative;
+
+    display: block;
+
+    width: 50%;
+    padding: 26px;
+
+    cursor: pointer;
+    transition: .2s linear;
+    text-align: center;
+
+    border: 1px solid #0956a3;
+}
+
+.donate_info .period input:checked + label
+{
+    color: #fff;
+
+    background: #0956a3;
+}
+
+
+.donate_info .period .desc
+{
+    line-height: 25px;
+
+    display: none;
+
+    margin-top: 25px;
+}
+
+.donate_info .period input:checked + label.period1 ~ .desc_period1
+{
+    display: block;
+}
+
+.donate_info .period input:checked + label.period2 ~ .desc_period2
+{
+    display: block;
+}
+
+
+.donate_info .sum
+{
+    margin-bottom: 25px;
+}
+
+
+.donate_info .sum .title
+{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 130%;
+
+    margin-bottom: 20px;
+}
+
+
+.donate_info .sum .field
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: nowrap;
+}
+
+.donate_info .sum input
+{
+    display: none;
+}
+
+.donate_info .sum label
+{
+    color: #0956a3;
+    font-size: 18px;
+    line-height: 26px;
+
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    padding: 26px;
+
+    cursor: pointer;
+    transition: .2s linear;
+    text-align: center;
+
+    border: 1px solid #0956a3;
+}
+
+.donate_info .sum input:checked + label
+{
+    box-shadow: inset 0 0 0 2px;
+}
+
+
+.donate_info .data
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 482px);
+    margin-left: auto;
+    padding: 39px 39px 39px 0;
+
+    border: 1px solid #0956a3;
+    border-left: none;
+}
+
+
+.donate_info .data .title
+{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+.donate_info .data .text_block
+{
+    margin-bottom: 40px;
+}
+
+.donate_info .data .text_block li
+{
+    padding-left: 21px;
+}
+
+.donate_info .data .text_block li:before
+{
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+
+    background: #0956a3;
+}
+
+
+.donate_info .payments
+{
+    display: flex;
+
+    margin-top: auto;
+    margin-bottom: -32px;
+    margin-left: -30px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.donate_info .payments img
+{
+    display: block;
+
+    margin-bottom: 12px;
+    margin-left: 30px;
 }
 
 
